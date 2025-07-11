@@ -12,7 +12,7 @@ class PasswordValidator:
         criteria += 1 if any(letter in "!@#$%^&*" for letter in password) else 0
 
         # reliability assessment
-        if criteria == 4 and len(password) > 12: return "Excellent"
+        if criteria >= 4 and len(password) > 12: return "Excellent"
         elif criteria >= 3: return "Strong"
         elif criteria >=2: return "Medium"
         return "Weak"

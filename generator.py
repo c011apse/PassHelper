@@ -11,13 +11,13 @@ class PasswordGenerator:
         self.use_special = False
     
     
-    def configure(self, length=12, use_lowercase=True, use_uppercase=True, 
-                  use_digits=False, use_special=False):
-        self.length = length
-        self.use_lowercase = use_lowercase
-        self.use_uppercase = use_uppercase
-        self.use_digits = use_digits
-        self.use_special = use_special
+    # def configure(self, length=12, use_lowercase=True, use_uppercase=True, 
+    #               use_digits=False, use_special=False):
+    #     self.length = length
+    #     self.use_lowercase = use_lowercase
+    #     self.use_uppercase = use_uppercase
+    #     self.use_digits = use_digits
+    #     self.use_special = use_special
 
     def generate(self):
         char_pool = ""
